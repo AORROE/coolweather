@@ -18,9 +18,8 @@ public class Utility {
 
     public static boolean handleProvinceResponse(String response) {
         if (!TextUtils.isEmpty(response)) {
-            JSONArray allProvinces = null;
             try {
-                allProvinces = new JSONArray(response);
+                JSONArray allProvinces = new JSONArray(response);
                 for (int i = 0; i < allProvinces.length(); i++) {
                     JSONObject provinceObject = allProvinces.getJSONObject(i);
                     Province province = new Province();
@@ -36,7 +35,7 @@ public class Utility {
         return false;
     }
 
-    public static boolean handleCityResponse(String response,int provinceId) throws JSONException {
+    public static boolean handleCityResponse(String response,int provinceId){
         if (!TextUtils.isEmpty(response)){
             try {
                 JSONArray allCities = new JSONArray(response);
