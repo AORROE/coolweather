@@ -14,6 +14,7 @@ gen/
 out/
 
 # Gradle files
+gradle.properties/
 .gradle/
 build/
 
@@ -42,7 +43,6 @@ captures/
 
 # Keystore files
 *.jks
-gradle.properties
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
