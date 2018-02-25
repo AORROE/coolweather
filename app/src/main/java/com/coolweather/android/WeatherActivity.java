@@ -150,7 +150,7 @@ public class WeatherActivity extends AppCompatActivity {
                         swipeRefresh.setRefreshing(false);
                     }
                 });
-                loadBingPic();
+
             }
 
             @Override
@@ -165,7 +165,7 @@ public class WeatherActivity extends AppCompatActivity {
                 });
             }
         });
-
+        loadBingPic();
     }
 
     private void loadBingPic() {
